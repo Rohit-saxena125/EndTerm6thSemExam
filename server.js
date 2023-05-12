@@ -7,7 +7,6 @@ var session = require('express-session')
 const auth = require('./routes/auth');
 const twitter=require('./routes/tweet');
 
-// Connect to MongoDB
 mongo.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true}).then(function(){
     console.log('Connected to MongoDB');
 }).catch(function(err){
